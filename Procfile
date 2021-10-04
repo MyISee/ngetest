@@ -1,1 +1,1 @@
-start bot : node yan.ja
+worker : node yan.js
