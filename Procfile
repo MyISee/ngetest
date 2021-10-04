@@ -1,1 +1,1 @@
-worker : node yan
+worker : npm start
