@@ -20,5 +20,5 @@ $ cp -r (namafile) /$HOME
 $ cd
 $ cd (namafile)
 $ npm install
-$ node Fernazer.js
+$ node yan.js
 ~ Scan!
