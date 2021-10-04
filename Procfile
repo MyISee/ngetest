@@ -1,1 +1,1 @@
-worker : npm start
+start bot : node yan.ja
