@@ -1,6 +1,6 @@
 /* WLCOME
 
-Author: Fernazer
+Author: mriyamnn
 Author2: Rudi Achil
 
 TQTQ TO DALAM BASE INI 
@@ -9,7 +9,7 @@ RUDI ACHIL (Team)
 HEGA (Team)
 AJIS JS (Team)
 ALVA RIZI (Team)
-FERNAZER (Author)
+mriyamnn (Author)
 
 // TQTQ BIG TO
 
@@ -21,13 +21,13 @@ FERNAZER (Author)
 
 // PENGGUNA BOT WA
 // SUBSCRIBER GUE
-// PENGGUNA BOT FERNAZER
+// PENGGUNA BOT mriyamnn
 // ALL CREATOR BOT
 
 SILAHKAN RECODE TAPI JANGAN HILANGKAN TQTQ DAN AUTHOR LAH MENDING TAMBAHIN AJA
 LU TU CUMAN RECODE DOANG JDI JANGAN MAIN HAK SENDIRI OKEE MOGA NGERTI LU
 
-/******************************* FERNAZER *******************************/
+/******************************* mriyamnn *******************************/
 /******************************* LOAD WACONNECT *******************************/
 const {
   WAConnection: _WAConnection,
@@ -41,7 +41,7 @@ const {
 } = require('@adiwajshing/baileys')
 const simple = require('./lib/simple.js')
 const WAConnection = simple.WAConnection(_WAConnection)
-/******************************* FERNAZER *******************************/
+/******************************* mriyamnn *******************************/
 /******************************* LOAD MODULES *******************************/
 const util = require('util');
 const translate = require("@vitalets/google-translate-api");
@@ -63,7 +63,7 @@ const request = require('request');
 const cheerio = require('cheerio') 
 const ffmpeg = require('fluent-ffmpeg')
 const imageToBase64 = require('image-to-base64')
-/******************************* FERNAZER *******************************/
+/******************************* mriyamnn *******************************/
 /******************************* LOAD LIB *******************************/
 const { msgFilter } = require('./lib/antispam')
 const { color, bgcolor } = require('./lib/color')
@@ -92,8 +92,8 @@ const { webp2mp4File} = require('./lib/webp2mp4')
 const { webp2gifFile } = require("./lib/gif.js")
 const { exif } = require('./lib/exif')
 const setGelud = require('./lib/gameGelud.js')
-const F = require('./lib/fernazer')
-/******************************* FERNAZER *******************************/
+const F = require('./lib/mriyamnn')
+/******************************* mriyamnn *******************************/
 /******************************* RETURN *******************************/
 const baterainye = JSON.parse(fs.readFileSync('./settings/iyan.json'))
 const {
@@ -101,12 +101,12 @@ const {
     chargi, 
 } = baterainye
 const setting = JSON.parse(fs.readFileSync('./settings/pengaturan.json'))
-/******************************* FERNAZER *******************************/
+/******************************* mriyamnn *******************************/
 /******************************* RETURN *******************************/
 let antiviewonce = JSON.parse(fs.readFileSync('./database/group/antiviewonce.json'));
 let antilink = JSON.parse(fs.readFileSync('./database/group/antilink.json'))
 let antivirtex = JSON.parse(fs.readFileSync('./database/group/antivirtex.json'))
-/******************************* FERNAZER *******************************/
+/******************************* mriyamnn *******************************/
 /******************************* RETURN *******************************/
 const _scommand = JSON.parse(fs.readFileSync('./database/scommand.json'))
 const voting = JSON.parse(fs.readFileSync('./database/voting.json'))
@@ -115,8 +115,8 @@ const { addVote, delVote } = require('./database/vote.js')
 const truth = JSON.parse(fs.readFileSync('./database/truth.json'))
 const dare = JSON.parse(fs.readFileSync('./database/dare.json'))
 const a = '```'
-const mastahfernazer = 'BELUM JADI BRE'
-/******************************* FERNAZER *******************************/
+const mastahmriyamnn = 'Ey yo'
+/******************************* mriyamnn *******************************/
 /******************************* RETURN *******************************/
 // Tictactoe By https://github.com/Fernazer
 ky_ttt = []
@@ -143,7 +143,7 @@ autorecording = true
 // COBA ELU JDI GW KEMBANGIN SC KE GINI LU PAHAM GAK COBA ??
 // JADI KLO ADA APA2 DENGN SC INI YA SANTE AJA BREE GA USH BACOT2 LAH NGMG BAIK2 KAN BISA 
 
-/******************************* FERNAZER *******************************/
+/******************************* mriyamnn *******************************/
 /******************************* FUNCTION *******************************/
 function addMetadata(packname, author) {
 	if (!packname) packname = `${config.packname}`; if (!author) author = ` ${config.author}`;
@@ -319,7 +319,7 @@ const checkSCommand = (id) => {
     return status
 }
 
-/******************************* FERNAZER *******************************/
+/******************************* mriyamnn *******************************/
 /******************************* FUNCTION *******************************/
 async function starts() {
 	const ya = new WAConnection()
@@ -341,7 +341,7 @@ async function starts() {
 	}) 
 	await ya.connect({timeoutMs: 30*1000})
   fs.writeFileSync('./iyan.json', JSON.stringify(ya.base64EncodedAuthInfo(), null, '\t'))
-/******************************* FERNAZER *******************************/
+/******************************* mriyamnn *******************************/
 /******************************* FUNCTION *******************************/
 ya.on("group-update", async (anu) => {
     metdata = await ya.groupMetadata(anu.jid);
@@ -372,7 +372,7 @@ ya.on("group-update", async (anu) => {
       console.log(`- [ Group Setting Change ] - In ${metdata.subject}`);
     }
   })
-/******************************* FERNAZER *******************************/
+/******************************* mriyamnn *******************************/
 /******************************* FUNCTION *******************************/
 ya.on('message-delete', async (m) => {
 if (m.key.remoteJid == 'status@broadcast') return
@@ -402,7 +402,7 @@ MessageType.text,
 
 ya.copyNForward(m.key.remoteJid, m.message);
 });
-/******************************* FERNAZER *******************************/
+/******************************* mriyamnn *******************************/
 /******************************* FUNCTION *******************************/
 ya.on("group-participants-update", async (anu) => {
     try {
@@ -440,7 +440,7 @@ ya.on("group-participants-update", async (anu) => {
           )}&pp=${pp_user}&bg=https://i.postimg.cc/rFkw8MpX/IMG-20210807-151325.jpg`
         );
         buttons = [
-          { buttonId: `Fernazer`, buttonText: { displayText: "HALLO SAYANG" }, type: 1 },
+          { buttonId: `mriyamnn`, buttonText: { displayText: "HALLO SAYANG" }, type: 1 },
         ];
         imageMsg = (
           await ya.prepareMessageMedia(buff, "imageMessage", {
@@ -477,7 +477,7 @@ ya.on("group-participants-update", async (anu) => {
           )}&pp=${pp_user}&bg=https://i.postimg.cc/rFkw8MpX/IMG-20210807-151325.jpg`
         );
         buttons = [
-          { buttonId: `Fernazer`, buttonText: { displayText: "Byee 👋" }, type: 1 },
+          { buttonId: `mriyamnn`, buttonText: { displayText: "Byee 👋" }, type: 1 },
         ];
         imageMsg = (
           await ya.prepareMessageMedia(buff, "imageMessage", {
@@ -502,7 +502,7 @@ ya.on("group-participants-update", async (anu) => {
          console.log('Error : %s', color(e, 'red'))
       }
 })
-/******************************* FERNAZER *******************************/
+/******************************* mriyamnn *******************************/
 /******************************* CALL BLOCK & BATTRE *******************************/
 	ya.on('CB:Blocklist', json => {
 		if (blocked.length > 2) return
@@ -514,7 +514,7 @@ ya.on('CB:action,,call', async json => {
     const callerId = json[2][0][1].from;
     console.log("call dari "+ callerId)
         ban.push(callerId)
-        ya.sendMessage(callerId, "Telpon = Block \nAnda di block Karna Telpon Bot \nSilahkan Chat ownerku untuk membuka block!\nwa.me/+6281328139682", MessageType.text)
+        ya.sendMessage(callerId, "Telpon = Block \nAnda di block Karna Telpon Bot \nSilahkan Chat ownerku untuk membuka block!\nwa.me/+6289649627900", MessageType.text)
         await sleep(5000)
         blocked.push(callerId)
         await ya.blockUser(callerId, "add") // Block user
@@ -525,7 +525,7 @@ ya.on("CB:action,,battery", json => {
 	  baterai.battery = `${persenbat}%`
 	  baterai.isCharge = json[2][0][1].live
 })
-/******************************* FERNAZER *******************************/
+/******************************* mriyamnn *******************************/
 /******************************* CHAT APDET *******************************/
 ya.on('chat-update', async (iyan) => {
 		try {
@@ -545,7 +545,7 @@ ya.on('chat-update', async (iyan) => {
 			const type = Object.keys(iyan.message)[0]			
 			const basreng = from.endsWith('@g.us')
 			const botiyan = basreng ? iyan.participant : iyan.key.remoteJid
-			userfernazer = ya.contacts[botiyan] != undefined ? ya.contacts[botiyan].vname || ya.contacts[botiyan].notify : undefined
+			usermriyamnn = ya.contacts[botiyan] != undefined ? ya.contacts[botiyan].vname || ya.contacts[botiyan].notify : undefined
 			const { text, extendedText, contact, location, liveLocation, image, video, sticker, document, audio, product } = MessageType
 			const speed = require('performance-now')
 			const date = new Date().toLocaleDateString()
@@ -729,8 +729,8 @@ ya.on('chat-update', async (iyan) => {
 		    })
 		    const lylia1 = {
             key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "caption": `Battery : ${battre}%\n*${waktoonyabro}*\n*${runtime}*`} } }
-	    // Voting By Fernazer
-        // https://github.com/Fernazer
+	    // Voting By mriyamnn
+        // https://github.com/mriyamnn
         if(isGroup && !isVote) {
         if (budy.toLowerCase() === 'vote'){
         let vote = JSON.parse(fs.readFileSync(`./database/${from}.json`))
@@ -778,7 +778,7 @@ ya.on('chat-update', async (iyan) => {
         }
     }
 }
-/******************************* FERNAZER *******************************/
+/******************************* mriyamnn *******************************/
 /******************************* CONST BUTT *******************************/
 const sendButMessage = (id, text1, desc1, but = [], options = {}) => {
       const buttonMessage = {
@@ -794,7 +794,7 @@ const sendButMessage = (id, text1, desc1, but = [], options = {}) => {
         options
       );
     };
-/******************************* FERNAZER *******************************/
+/******************************* mriyamnn *******************************/
 /******************************* CONST MEDIA *******************************/
 const downloadM = async(save) => {
 obj = Object.keys(iyan.message)[0]
@@ -873,7 +873,7 @@ const sendFileFromUrl = async(link, type, options) => {
 	})
 	})
 	}
-/******************************* FERNAZER *******************************/
+/******************************* mriyamnn *******************************/
 /******************************* CONST GAME *******************************/
    const getWin = (userId) => {
             let position = false
@@ -886,7 +886,7 @@ const sendFileFromUrl = async(link, type, options) => {
                 return _win[position].win
             }
         }
-/******************************* FERNAZER *******************************/
+/******************************* mriyamnn *******************************/
 /******************************* AUTO *******************************/
 function clockString(ms) {
       let h = isNaN(ms) ? "--" : Math.floor(ms / 3600000);
@@ -923,7 +923,7 @@ let settingstatus = 0;
 
             surface: 200,
 
-            message: `${userfernazer}\n⎇ ${command}`,
+            message: `${usermriyamnn}\n⎇ ${command}`,
 
             orderTitle: 'jual sc no enc 15k', 
 
@@ -940,7 +940,7 @@ ya.sendMessage(from, teks, text,{contextInfo :{text: 'hi',
 isForwarded: false,
 sendEphemeral: false,
 "externalAdReply": {
-"title": `${userfernazer}\nBy ${ucapanWaktu}`,
+"title": `${usermriyamnn}\nBy ${ucapanWaktu}`,
 "body": "",
 "previewType": "PHOTO",
 "thumbnailUrl": "https://ibb.co/tBz2BpJ",
@@ -970,13 +970,13 @@ sendEphemeral: false,
             if (isCmd && !isGroup) {console.log(color('[ CMD PRIVATE ]'), color(moment(iyan.messageTimestamp * 1000).format('HH:mm:ss'), 'magenta'), color(`${command} [${args.length}]`, 'cyan'))}
 	        if (!command) console.log(iyan)
 	        if (isCmd && isGroup) {
-            console.log(color('[ CMD GROUP ]'), color(moment(iyan.messageTimestamp * 1000).format('HH:mm:ss'), 'magenta'), color(`${command} [${args.length}]`, 'cyan'), color('from', 'pink'), color(`${userfernazer}`, 'yellow'), color('in', 'pink'), color(`${groupName}`, 'gold'))}
+            console.log(color('[ CMD GROUP ]'), color(moment(iyan.messageTimestamp * 1000).format('HH:mm:ss'), 'magenta'), color(`${command} [${args.length}]`, 'cyan'), color('from', 'pink'), color(`${usermriyamnn}`, 'yellow'), color('in', 'pink'), color(`${groupName}`, 'gold'))}
         
 			switch(command) {
 			
 //******************************* SWITCH COMMAND CASE *******************************//
 
-/******************************* FERNAZER *******************************/
+/******************************* mriyamnn *******************************/
 /******************************* GRUP *******************************/ 
 case 'sider': 
 if (!isGroup) return reply(mess.only.group)
@@ -1291,7 +1291,7 @@ console.log('Error :', e)
 faketroli('Gagal menambahkan target, mungkin karena di private')
 }  
 break 
-/******************************* FERNAZER *******************************/
+/******************************* mriyamnn *******************************/
 /******************************* OWNER *******************************/ 
 case 'ban':
 if (!isOwner) return
@@ -1324,7 +1324,7 @@ case 'exec':
 if (!isOwner) return reply(mess.only.owner)
 if (!q) return reply(`masukin code!`)
 exec(`${q}`, (err, stdout) => {
-if (err) return reply(`root@Fernazer:~ ${err}`)
+if (err) return reply(`root@mriyamnn:~ ${err}`)
 if (stdout) {
 reply(stdout)
 }
@@ -1505,16 +1505,16 @@ ya.sendMessage('status@broadcast', buff, audio, {mimetype: 'audio/mp4', duration
 }
 reply(`Sukses upload voice`)
 break
-/******************************* FERNAZER *******************************/
+/******************************* mriyamnn *******************************/
 /******************************* HELP *******************************/
 case 'help2':
 case 'menu2':
 if (isBanned) return reply(mess.only.benned)   		
-fernazer = `
+mriyamnn = `
 ┏━━━•
 ┣❒「 *INFORMATION* 」
 ┣❒  
-┣❒ Ucapan: ${ucapanWaktu} ${userfernazer}
+┣❒ Ucapan: ${ucapanWaktu} ${usermriyamnn}
 ┣❒  
 ┣❒ Tag: @${sender.split("@")[0]}
 ┣❒ batre: ${battre}
@@ -1659,16 +1659,16 @@ fernazer = `
 ┣❒ $
 ┣❒ =>
 ┗━━━•`
-ya.send2Button(from, fernazer, `Time : ${time} ~mriyamnn`, 'OWNER', `${prefix}owner`, 'INFO BOT',`${prefix}info` , { quoted: faketroli ,contextInfo: {"mentionedJid": [sender]}})
+ya.send2Button(from, mriyamnn, `Time : ${time} ~mriyamnn`, 'OWNER', `${prefix}owner`, 'INFO BOT',`${prefix}info` , { quoted: faketroli ,contextInfo: {"mentionedJid": [sender]}})
 break
  
  case 'menu':
  if (isBanned) return reply(mess.only.benned)
 let tod = fs.readFileSync('./media/mriyamnn.jpg')
-ya.sendMessage(from,{contentText:`Hai, ${userfernazer} ${ucapanWaktu}`,footerText:'rules Bot\n\nTlpn/Vc = Blok\n\nSosmed\n\nwoilo: https://woilo.com/user/miror\ninstagram: https://www.instagram.com/mriyamnn/\ngroup: https://chat.whatsapp.com/DQBpG60k2UlJCAcOngm7UF\n\nTQTQ\nmriyamnn\npengguna bot',buttons:[{buttonId:`${prefix}menu2`,buttonText:{displayText:'MENU BOT'},type:1},{buttonId:`${prefix}serial`,buttonText:{displayText:'SERIAL'},type:1}],headerType:'LOCATION',locationMessage:{degreesLatitude:'',degreesLongitude:'',jpegThumbnail:tod,contextInfo:{mentionedJid:[sender]}}},'buttonsMessage') 
+ya.sendMessage(from,{contentText:`Hai, ${usermriyamnn} ${ucapanWaktu}`,footerText:'rules Bot\n\nTlpn/Vc = Blok\n\nSosmed\n\nwoilo: https://woilo.com/user/miror\ninstagram: https://www.instagram.com/mriyamnn/\ngroup: https://chat.whatsapp.com/DQBpG60k2UlJCAcOngm7UF\n\nTQTQ\nmriyamnn\npengguna bot',buttons:[{buttonId:`${prefix}menu2`,buttonText:{displayText:'MENU BOT'},type:1},{buttonId:`${prefix}serial`,buttonText:{displayText:'SERIAL'},type:1}],headerType:'LOCATION',locationMessage:{degreesLatitude:'',degreesLongitude:'',jpegThumbnail:tod,contextInfo:{mentionedJid:[sender]}}},'buttonsMessage') 
 break  
 
-/******************************* FERNAZER *******************************/
+/******************************* mriyamnn *******************************/
 /******************************* RETURN RANDOM *******************************/
 // FITUR JOIN MASUKIN CODE MSI EROR YA BIARIN AJA DLU GW BLM NEMU CONST NYA HEHE
 case 'join':
@@ -1687,7 +1687,7 @@ seri_zer = randomString(6)
 join_fer.push(seri_zer)
 serinya = `*CODE SERIAL JOIN*
 
-Nama : ${userfernazer}
+Nama : ${usermriyamnn}
 Nomor : wa.me/${sender.split("@s.whatsapp.net")[0]}
 Code Join Kamu : ${seri_zer}
 
@@ -1750,7 +1750,7 @@ buttonsMessage = { contentText: `${result}`, footerText: 'Kebenaran atau tantang
 prep = await ya.prepareMessageFromContent(from,{buttonsMessage},{})
 ya.relayWAMessage(prep)
 break
-/******************************* FERNAZER *******************************/
+/******************************* mriyamnn *******************************/
 /****************************** MAKER *******************************/
 case 'naruto':
 if (!q) return reply('teksnya mana?')
@@ -1840,7 +1840,7 @@ pButterfly(`${q}`)
 sendMediaURL(from, res.url)
 		})
 		break		
-/******************************* FERNAZER *******************************/
+/******************************* mriyamnn *******************************/
 /****************************** EDITOR *******************************/
 case 'komunis':
 reply(mess.wait)
@@ -1920,7 +1920,7 @@ ya.sendMessage(from, buff, image, {quoted: faketroli, caption: mess.succes}).cat
 return reply('_[ ! ] Error Gagal Dalam Mendownload Dan Mengirim File_')
 })
 break
-/******************************* FERNAZER *******************************/
+/******************************* mriyamnn *******************************/
 /******************************* RETURN SET *******************************/
 case 'buttonmusic':
 if(!q) return reply('linknya?')
@@ -1969,7 +1969,7 @@ teksnyee += `\n\n➸ *ID :* ${i.id}\n➸ *Cmd* : ${i.chats}`
 }
 mentions(teksnyee, cemde, true)
 break
-/******************************* FERNAZER *******************************/
+/******************************* mriyamnn *******************************/
 /******************************* GAME *******************************/
 case 'suit':     
                     if (!q) return reply(`Kirim perintah ${prefix}suit [pilihan]\nContoh: ${prefix}suit gunting`)
@@ -2074,7 +2074,7 @@ Ketik Y/N untuk menerima atau menolak permainan
 Ket : Ketik /deltt , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contextInfo: {mentionedJid: [player2]}})
 break
 
-/******************************* FERNAZER *******************************/
+/******************************* mriyamnn *******************************/
 /******************************* INFO *******************************/
 case 'infostick':
 case 'infos':
@@ -2152,7 +2152,7 @@ giid.push(id)
 let timestampi = speed();
 let latensii = speed() - timestampi
 const { wa_version, mcc, mnc, os_version, device_manufacturer, device_model } = ya.user.phone
-inifernazer =
+inimriyamnn =
  `「 *STATUS CHAT* 」
             
 • Group Chats: ${giid.length}
@@ -2173,10 +2173,10 @@ inifernazer =
 • runtime: ${runtime(process.uptime())}
 
 *Speed* > ${latensii.toFixed(4)} Second!`
-ya.sendButton(from,inifernazer,'Creator: mriyamnn','KEMBALI KE MENU',`${prefix}menu2`,{quoted: faketroli})
+ya.sendButton(from,inimriyamnn,'Creator: mriyamnn','KEMBALI KE MENU',`${prefix}menu2`,{quoted: faketroli})
 break
 case 'info':
-fernazer = `*Info Owner*
+mriyamnn = `*Info Owner*
 
 • Name: *Alpian Ardiansyah Putra*
 • Age: *14*
@@ -2189,7 +2189,7 @@ fernazer = `*Info Owner*
 • Woilo: @miror
 
  *BOT INFO*`
-ya.sendButton(from,fernazer,'Creator: mriyamnn','KEMBALI KE MENU',`${prefix}menu2`,{quoted: faketroli})
+ya.sendButton(from,mriyamnn,'Creator: mriyamnn','KEMBALI KE MENU',`${prefix}menu2`,{quoted: faketroli})
 break
 case 'owner':
 if (isBanned) return reply(mess.only.benned)    
@@ -2202,11 +2202,11 @@ ini_list.push({
 "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:${ya.getName(i)}\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
 })
 }
-yafernazer = await ya.sendMessage(from, {
-"displayName": `${ini_list.length} kontak`,
+yamriyamnn = await ya.sendMessage(from, {
+"displayName": `${ini_list.length} mriyamnn`,
 "contacts": ini_list 
 }, 'contactsArrayMessage', { quoted: m })
-ya.sendMessage(from, `nah yang ini nih onwer ganteng`,text,{quoted: mriyamnn})
+ya.sendMessage(from, `nah yang ini nih onwer ganteng`  ,text,{quoted: mriyamnn})
 break
 case 'bug':
 if (isBanned) return reply(mess.only.benned)    
@@ -2226,7 +2226,7 @@ contextInfo: {mentionedJid: [nomor]},
 ya.sendMessage('6281328139682@s.whatsapp.net', options, text, {quoted: faketroli})
 reply('Terima kasih, masalah kamu sudah di laporkan ke mriyamnn')
 break
-/******************************* FERNAZER *******************************/
+/******************************* mriyamnn *******************************/
 /******************************* CONVERT *******************************/
 case 'tomp3':
 reply(mess.wait)
@@ -2340,7 +2340,7 @@ case 'detikvn':
 				    ya.sendMessage(from, hah, video, {mimetype: 'video/mp4', duration: cokmatane, quoted: faketroli})
 			        fs.unlinkSync(media)
 				    break
-/******************************* FERNAZER *******************************/
+/******************************* mriyamnn *******************************/
 /******************************* STIKER *******************************/      
 case 'emoji':
 if (isBanned) return reply(mess.only.benned)    
@@ -2426,7 +2426,7 @@ if (args.length == 0) return reply(`Example: ${prefix + command} Hai`)
 buffer = await getBuffer(`https://api.xteam.xyz/attp?file&text=${encodeURI(q)}`)
 ya.sendMessage(from, buffer, sticker, { quoted: faketroli })
 break
-// Case By Fernazer
+// Case By mriyamnn
 case 'kirim':
 case 'f':
 if(!iyan.quoted) return reply('reply chatnya!')
@@ -2470,7 +2470,7 @@ fs.unlinkSync(media)
 const encmedia = isQuotedVideo ? JSON.parse(JSON.stringify(iyan).replace('quotedM','m')).message.extendedTextMessage.contextInfo : iyan            
 const media = await ya.downloadAndSaveMediaMessage(encmedia)            
 var a = `Punya`            
-var b = `Fernazer`            
+var b = `mriyamnn`            
 await createExif(a,b)            
 out = getRandom('.webp')            
 ffmpeg(media)            
@@ -2519,7 +2519,7 @@ sendStickerFromUrl(from, pjr)
 ya.sendButton(from,ucapanWaktu,'Creator: mriyamnn','NEXT➡',`${prefix}doge`,{quoted: faketroli})
 break	                
    
-/******************************* FERNAZER *******************************/
+/******************************* mriyamnn *******************************/
 /******************************* DOWNLOADER *******************************/ 
 case 'play':
 case 'ytdl':
@@ -2542,8 +2542,8 @@ let thumbInfo = `*Youtube Play▶️*
 buttons = [{buttonId:`${prefix}buttonvideo ${res.all[0].url}`,buttonText:{displayText:'🎥VIDEO'},type:1},{buttonId:`${prefix}buttonmusic ${res.all[0].url}`,buttonText:{displayText:'🎵AUDIO'},type:1}]
 imageMessage = (await ya.prepareMessageMedia({url:res.all[0].image},'imageMessage',{thumbnail:Buffer.alloc(0)})).imageMessage
 buttonsMessage = {contentText: thumbInfo,footerText:'Silahkan Pilih Jenis File Dibawah Ini',imageMessage,buttons,headerType:4}
-iniFernazer = await ya.prepareMessageFromContent(from,{buttonsMessage},{})
-ya.relayWAMessage(iniFernazer)
+inimriyamnn = await ya.prepareMessageFromContent(from,{buttonsMessage},{})
+ya.relayWAMessage(inimriyamnn)
 break
 case 'google':
 if (!q) return reply('apa yang mau di cari?')
@@ -2853,7 +2853,7 @@ reply('username tidak valid')
 }
 break
 
-/******************************* FERNAZER *******************************/
+/******************************* mriyamnn *******************************/
 /******************************* SEARCH MENU *******************************/ 
 case 'filmapikterbaru':
 film = await fetchJson(`http://zekais-api.herokuapp.com/filmapiklatest`, {method: 'get'})
@@ -2901,7 +2901,7 @@ console.log(error);
 )
 });
 break
-/******************************* FERNAZER *******************************/
+/******************************* mriyamnn *******************************/
 /******************************* ISLAM MENU *******************************/ 
 case 'ayatkursi': 		        							
 reply(mess.wait)
@@ -2938,7 +2938,7 @@ teks += `Bacaan : ${i.name}\n*Arab* : ${i.arabic}\n*Latin* : ${i.latin}\n*Terjem
 ya.sendButton(from,teks,'Creator: mriyamnn','KEMBALI KE MENU',`${prefix}menu2`,{quoted: faketroli})
 break
 
-/******************************* FERNAZER *******************************/
+/******************************* mriyamnn *******************************/
 /******************************* JAN DI APA2IN TAR EROR *******************************/
 default:
 if (isGroup && isAntiVO && type == 'viewOnceMessage'){
@@ -3172,7 +3172,7 @@ ${ttt}`
  ya.sendMessage(from, ucapan, text, {quoted: faketroli, contextInfo:{mentionedJid: [tty.player1,tty.player2]}})
 } else {
 	}
-/******************************* FERNAZER *******************************/
+/******************************* mriyamnn *******************************/
 /******************************* JAN DI APA2IN TAR EROR *******************************/
 if (budy.startsWith('=>')){
 if (!isOwner) return
