@@ -1,0 +1,180 @@
+~ $ node yan
+internal/modules/cjs/loader.js:905
+  throw err;
+  ^
+
+Error: Cannot find module 'insta-fetcher'
+Require stack:
+- /app/yan.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:902:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:746:27)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:93:18)
+    at Object.<anonymous> (/app/yan.js:61:12)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:12)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/app/yan.js' ]
+}
+~ $ npm i instal -fetcher
+[..................] - rollbackFailedOptional: verb npm-session f0f07034d7539cc[..................] - rollbackFailedOptional: verb npm-session f0f07034d7539cc[..................] - rollbackFailedOptional: verb npm-session f0f07034d7539cc[..................] - rollbackFailedOptional: verb npm-session f0f07034d7539cc[..................] - rollbackFailedOptional: verb npm-session f0f07034d7539cc[..................] - rollbackFailedOptional: verb npm-session f0f07034d7539cc[..................] - rollbackFailedOptional: verb npm-session f0f07034d7539cc[..................] - rollbackFailedOptional: verb npm-session f0f07034d7539cc[..................] - rollbackFailedOptional: verb npm-session f0f07034d7539cc[..................] - rollbackFailedOptional: verb npm-session f0f07034d7539cc[..................] - rollbackFailedOptional: verb npm-session f0f07034d7539cc[..................] - rollbackFailedOptional: verb npm-session f0f07034d7539cc[..................] - rollbackFailedOptional: verb npm-session f0f07034d7539cc[..................] - rollbackFailedOptional: verb npm-session f0f07034d7539cc[..................] - rollbackFailedOptional: verb npm-session f0f07034d7539cc[..................] - rollbackFailedOptional: verb npm-session f0f07034d7539cc[..................] - rollbackFailedOptional: verb npm-session f0f07034d7539cc[..................] \ rollbackFailedOptional: verb npm-session f0f07034d7539cc[..................] - loadIdealTree:loadAllDepsIntoIdealTree: sill install loa[..................] / loadDep:axios: sill resolveWithNewModule insta-fetcher@1[    ..............] / loadDep:responselike: sill resolveWithNewModule insta-fe[     .............] / loadDep:timm: sill resolveWithNewModule insta-fetcher@1.[      ............] / loadDep:long: sill resolveWithNewModule insta-fetcher@1.[      ............] / loadExtraneous: sill resolveWithNewModule insta-fetcher@[      ............] / loadExtraneous: sill resolveWithNewModule insta-fetcher@[      ............] / loadExtraneous: sill resolveWithNewModule insta-fetcher@[      ............] / loadExtraneous: sill resolveWithNewModule insta-fetcher@[      ............] / loadExtraneous: sill resolveWithNewModule insta-fetcher@[      ............] - diffTrees: sill install generateActionsToTake[       ...........] - postinstall: sill install executeActions[            ......] - postinstall: info lifecycle insta-fetcher@1.2.3~postinstnpm WARN fernazer-bot@2.0.0 No license field.
+
++ insta-fetcher@1.2.3
+added 1 package from 1 contributor and audited 490 packages in 2.525s
+
+47 packages are looking for funding
+  run `npm fund` for details
+
+found 17 moderate severity vulnerabilities
+  run `npm audit fix` to fix them, or `npm audit` for details
+[            ......] \ postinstall: sill install printInstalled~ $ node yan
+> [ INFO ] Starting Yan Bot...
+> [ INFO ] Configure Connection...
+> [ INFO ] Configure Success, Connecting
+1️⃣ Connecting...
+2️⃣ Connecting...
+3️⃣ Connecting...
+4️⃣ Connecting...
+5️⃣ Connecting...
+6️⃣ Connecting...
+7️⃣ Connecting...
+8️⃣ Connecting...
+9️⃣ Connecting...
+✓ Connected
+WebMessageInfo {
+  messageStubParameters: [],
+  labels: [],
+  key: MessageKey {
+    remoteJid: '6281314050985-1628937176@g.us',
+    fromMe: false,
+    id: '3EB09AACA8BF'
+  },
+  message: Message {
+    buttonsMessage: ButtonsMessage {
+      buttons: [Array],
+      imageMessage: [ImageMessage],
+      contentText: '「 *𝗣𝗘𝗡𝗗𝗔𝗙𝗧𝗔𝗥𝗔𝗡 𝗨𝗦𝗘𝗥* 」\n' +
+        '*Terimakasih Sudah Mendaftarkan Diri Dalam Database Bot WhatsApp*\n' +
+        '\n' +
+        '*☂︎ Nama :* IKHSAN (25-XIPA-2) hiatus\n' +
+        '*☂︎ API :* +6281217151443\n' +
+        '*☂︎ Serial:* 4b13fc764a6a715781\n' +
+        '*☂ ︎Total:* 38 𝗣𝗲𝗻𝗴𝗴𝘂𝗻𝗮\n' +
+        '\n' +
+        '*「 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺 trito シ︎ 」*',
+      footerText: '𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺 tritoシ︎',
+      headerType: 4
+    }
+  },
+  messageTimestamp: Long { low: 1633828222, high: 0, unsigned: true },
+  participant: '12138009523@s.whatsapp.net',
+  ephemeralOutOfSync: false,
+  epoch: 1001,
+  id: '3EB09AACA8BF',
+  isBaileys: true,
+  chat: '6281314050985-1628937176@g.us',
+  fromMe: false,
+  isGroup: true,
+  sender: '12138009523@s.whatsapp.net',
+  mtype: 'buttonsMessage',
+  msg: ButtonsMessage {
+    buttons: [ [Button] ],
+    imageMessage: ImageMessage {
+      interactiveAnnotations: [],
+      scanLengths: [],
+      url: 'https://mmg.whatsapp.net/d/f/AoBEHXdk60zf9Do88HOIojHPwbpf1-BTLQjKN9vVldf3.enc',
+      mimetype: 'image/jpeg',
+      fileSha256: <Buffer 60 f5 ac 31 aa 58 e0 5d 29 10 40 97 8e 70 af 74 ce c5 8a 80 88 e0 e9 79 91 7d 35 81 6b 80 c1 21>,
+      fileLength: [Long],
+      mediaKey: <Buffer fa 45 c6 cc b1 2b 02 55 9c 34 2e 8c d1 2a 5d 0e b4 cd c9 45 bc 70 26 8c 3a 51 8c 0d e1 be e9 b6>,
+      fileEncSha256: <Buffer 24 d1 fe ef ab c9 8c e3 67 8c c9 69 23 c3 d2 32 e0 af 7a 65 75 2d 2c 17 c3 fb b5 95 2e 2f fc 11>,
+      contextInfo: [ContextInfo]
+    },
+    contentText: '「 *𝗣𝗘𝗡𝗗𝗔𝗙𝗧𝗔𝗥𝗔𝗡 𝗨𝗦𝗘𝗥* 」\n' +
+      '*Terimakasih Sudah Mendaftarkan Diri Dalam Database Bot WhatsApp*\n' +
+      '\n' +
+      '*☂︎ Nama :* IKHSAN (25-XIPA-2) hiatus\n' +
+      '*☂︎ API :* +6281217151443\n' +
+      '*☂︎ Serial:* 4b13fc764a6a715781\n' +
+      '*☂ ︎Total:* 38 𝗣𝗲𝗻𝗴𝗴𝘂𝗻𝗮\n' +
+      '\n' +
+      '*「 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺 trito シ︎ 」*',
+    footerText: '𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺 tritoシ︎',
+    headerType: 4
+  },
+  quoted: null,
+  mentionedJid: [],
+  text: ButtonsMessage {
+    buttons: [ [Button] ],
+    imageMessage: ImageMessage {
+      interactiveAnnotations: [],
+      scanLengths: [],
+      url: 'https://mmg.whatsapp.net/d/f/AoBEHXdk60zf9Do88HOIojHPwbpf1-BTLQjKN9vVldf3.enc',
+      mimetype: 'image/jpeg',
+      fileSha256: <Buffer 60 f5 ac 31 aa 58 e0 5d 29 10 40 97 8e 70 af 74 ce c5 8a 80 88 e0 e9 79 91 7d 35 81 6b 80 c1 21>,
+      fileLength: [Long],
+      mediaKey: <Buffer fa 45 c6 cc b1 2b 02 55 9c 34 2e 8c d1 2a 5d 0e b4 cd c9 45 bc 70 26 8c 3a 51 8c 0d e1 be e9 b6>,
+      fileEncSha256: <Buffer 24 d1 fe ef ab c9 8c e3 67 8c c9 69 23 c3 d2 32 e0 af 7a 65 75 2d 2c 17 c3 fb b5 95 2e 2f fc 11>,
+      contextInfo: [ContextInfo]
+    },
+    contentText: '「 *𝗣𝗘𝗡𝗗𝗔𝗙𝗧𝗔𝗥𝗔𝗡 𝗨𝗦𝗘𝗥* 」\n' +
+      '*Terimakasih Sudah Mendaftarkan Diri Dalam Database Bot WhatsApp*\n' +
+      '\n' +
+      '*☂︎ Nama :* IKHSAN (25-XIPA-2) hiatus\n' +
+      '*☂︎ API :* +6281217151443\n' +
+      '*☂︎ Serial:* 4b13fc764a6a715781\n' +
+      '*☂ ︎Total:* 38 𝗣𝗲𝗻𝗴𝗴𝘂𝗻𝗮\n' +
+      '\n' +
+      '*「 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺 trito シ︎ 」*',
+    footerText: '𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺 tritoシ︎',
+    headerType: 4
+  },
+  reply: [Function (anonymous)],
+  copy: [Function (anonymous)],
+  forward: [Function (anonymous)],
+  copyNForward: [Function (anonymous)],
+  cMod: [Function (anonymous)]
+}
+WebMessageInfo {
+  messageStubParameters: [],
+  labels: [],
+  key: MessageKey {
+    remoteJid: '6285820289623-1626391814@g.us',
+    fromMe: false,
+    id: '15F4A743FFB8DA7702D373DB067E3855'
+  },
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: '@628895548529 oi',
+      previewType: 0,
+      contextInfo: [ContextInfo]
+    }
+  },
+  messageTimestamp: Long { low: 1633828231, high: 0, unsigned: true },
+  participant: '62895627136090@s.whatsapp.net',
+  ephemeralOutOfSync: false,
+  epoch: 1001,
+  id: '15F4A743FFB8DA7702D373DB067E3855',
+  isBaileys: false,
+  chat: '6285820289623-1626391814@g.us',
+  fromMe: false,
+  isGroup: true,
+  sender: '62895627136090@s.whatsapp.net',
+  mtype: 'extendedTextMessage',
+  msg: ExtendedTextMessage {
+    text: '@628895548529 oi',
+    previewType: 0,
+    contextInfo: ContextInfo { mentionedJid: [Array] }
+  },
+  quoted: null,
+  mentionedJid: [ '628895548529@s.whatsapp.net' ],
+  text: '@628895548529 oi',
+  reply: [Function (anonymous)],
+  copy: [Function (anonymous)],
+  forward: [Function (anonymous)],
+  copyNForward: [Function (anonymous)],
+  cMod: [Function (anonymous)]
+}
