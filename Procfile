@@ -1,1 +1,1 @@
-worker : npm i ffmpeg && npm i @adiwajshing/baileys@latest && node yan.js
+worker : npm i insta-fetcher && node yan
